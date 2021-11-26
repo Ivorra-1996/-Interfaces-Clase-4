@@ -1,8 +1,10 @@
 
-const boton = document.querySelector('boton');
+function crearParrafo(){
+    let parrafo = document.createElement('p');
+    let textoParrafo = document.createTextNode('BEEP');
 
+    parrafo.appendChild(textoParrafo);
 
-function selecionarBody(){
-    document.getElementById('body');
-    
+    document.getElementsByTagName('body')[0].appendChild(parrafo);
+
 }
